@@ -1,0 +1,1 @@
+dùng lệnh này để gộp ffmpeg -i video.mp4 -i audio.mp4 -c copy -map 0:v -map 1:a video_ket_qua.mp4

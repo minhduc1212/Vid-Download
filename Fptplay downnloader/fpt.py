@@ -16,20 +16,21 @@ response_mpd = requests.get(mpd_url, headers=headers)
 with open("output_fpt/stream.mpd", "wb") as f:
     f.write(response_mpd.content)
 
-#lấy audio
-for i in range(1, 355):
-    #lấy audio đầu tiên 
+#lấy audio đầu tiên 
     first_audio_url = 'https://vod02-cdn.fptplay.net/POVOD/encoded/2024/10/31/pokemonultimatejourneystheseries-2021-jp-001-1730316012/H264/audio/und/mp4a.40.2/init.mp4'
     response_first_audio = requests.get(first_audio_url, headers=headers)
     with open(f"output_fpt/audio/und/mp4a.40.2/init.mp4", "wb") as f:
         f.write(response_first_audio.content)
 
-    #lấy video đầu tiên
+#lấy video đầu tiên
     first_video_url = 'https://vod02-cdn.fptplay.net/POVOD/encoded/2024/10/31/pokemonultimatejourneystheseries-2021-jp-001-1730316012/H264/video/avc1/4/init.mp4'
     response_first_video = requests.get(first_video_url, headers=headers)
     with open(f"output_fpt/video/avc1/4/init.mp4", "wb") as f:
         f.write(response_first_video.content)
 
+#lấy audio
+for i in range(1, 355):
+    
     #lấy audio tiếp theo
     audio_url = audio_url_temp.format(a=i)
     response_audio = requests.get(audio_url, headers=headers)
