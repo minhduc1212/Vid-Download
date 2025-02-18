@@ -1,9 +1,9 @@
+#Download and convert directly to 2 files mp4 audio and video
 import requests
 
 audio_url_temp = 'https://vod02-cdn.fptplay.net/POVOD/encoded/2024/10/31/pokemonultimatejourneystheseries-2021-jp-001-1730316012/H264/audio/und/mp4a.40.2/seg-{a}.m4s'
 video_url_temp = 'https://vod02-cdn.fptplay.net/POVOD/encoded/2024/10/31/pokemonultimatejourneystheseries-2021-jp-001-1730316012/H264/video/avc1/4/seg-{b}.m4s'
 
-mpd_url = 'https://vod02-cdn.fptplay.net/POVOD/encoded/2024/10/31/pokemonultimatejourneystheseries-2021-jp-001-1730316012/H264/stream.mpd'
 
 audio_segments = []
 video_segments = []

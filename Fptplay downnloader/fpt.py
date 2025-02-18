@@ -1,3 +1,5 @@
+#download to mpd and m4s files
+
 import requests
 
 audio_url_temp = 'https://vod02-cdn.fptplay.net/POVOD/encoded/2024/10/31/pokemonultimatejourneystheseries-2021-jp-001-1730316012/H264/audio/und/mp4a.40.2/seg-{a}.m4s'
